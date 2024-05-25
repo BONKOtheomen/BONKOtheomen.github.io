@@ -1,5 +1,5 @@
 <?php
-include_once($_SERVER['DOCUMENT_ROOT'] . '/_head2.php');
+include_once($_SERVER['DOCUMENT_ROOT'] . 'inc/head.php');
 ?>
 
     <section class="section-publish">
