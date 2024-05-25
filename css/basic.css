@@ -1,0 +1,36 @@
+@charset "utf-8";
+
+/*------basic start-------------------------------------------------------------------------------------------------*/
+* {-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; margin:0; padding:0;}
+html {-webkit-text-size-adjust:100%;}
+html,body{
+	font-family: -apple-system,BlinkMacSystemFont,"Malgun Gothic","맑은 고딕",helvetica,"Apple SD Gothic Neo",sans-serif;
+	font-size:100%; line-height:normal; letter-spacing:normal; color: #333;
+	}
+h1, h2, h3, h4, h5, h6, strong, th, b, em{font-size:100%; font-weight: normal;}
+a, a:hover, a:active, a:focus{color: inherit; text-decoration:none;}
+a img,img{border:0; vertical-align:top;}
+ul{list-style: none;}
+address, em, i{ font-style: normal;}
+textarea{resize: none;}
+table{border-collapse: collapse; border-spacing: 0;}
+button{border:0; background:none; cursor:pointer; -webkit-appearance:none;}
+input{border:0; background:none; appearance: none; outline: 0; -webkit-appearance:none;}
+.blind{position: absolute; clip:rect(0 0 0 0); width:1px; height:1px; margin:-1px; overflow:hidden;}
+
+
+/*------custom------------------------------------------------------------------------------------------------------*/
+
+html{font-size: 10px;}
+body{font-size: 1.6rem;}
+
+@media screen and (max-width: 1200px){
+    html{font-size: 9px;}
+}
+
+@media screen and (max-width: 1024px){
+    html{font-size: 8px;}
+}
+
+
+/*------common------------------------------------------------------------------------------------------------------*/
