@@ -143,45 +143,55 @@ body {
   background: url("/img/bg-texture-purple.png");
 }
 .section-about .about-wrap {
-  max-width: 1024px;
   display: flex;
   align-items: flex-end;
-  padding: 160px 0 90px;
+  max-width: 1024px;
+  padding: 70px 0 90px;
   margin: 0 auto;
+  transform: translateX(4vw);
   color: #000000;
 }
-.section-about .about-wrap .profile {
-  flex: 1 1 0;
-  padding-bottom: 50px;
-}
-.section-about .about-wrap .profile h3 {
-  font-size: 5.4rem;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-.section-about .about-wrap .profile h3 br {
+.section-about .about-wrap br {
   display: none;
 }
-.section-about .about-wrap .profile .table-wrap {
-  margin-top: 40px;
+@media (max-width: 1280px) {
+  .section-about .about-wrap {
+    max-width: 920px;
+  }
+  .section-about .about-wrap br {
+    display: block;
+  }
 }
-.section-about .about-wrap .profile .table-wrap table th,
-.section-about .about-wrap .profile .table-wrap table td {
-  vertical-align: middle;
-  padding: 4px;
+@media (max-width: 1100px) {
+  .section-about .about-wrap {
+    max-width: 800px;
+  }
 }
-.section-about .about-wrap .profile .table-wrap table th {
-  text-align: left;
-  font-weight: 800;
+@media (max-width: 920px) {
+  .section-about .about-wrap {
+    display: block;
+    text-align: center;
+  }
 }
-.section-about .about-wrap .profile .table-wrap table td.name {
-  font-weight: 800;
-}
-.section-about .about-wrap .right {
+.section-about .about-wrap .left {
+  flex: 1 1 0;
   position: relative;
-  flex-basis: 400px;
+  padding-top: 235px;
 }
-.section-about .about-wrap .right .tag {
+.section-about .about-wrap .left .tags {
+  position: absolute;
+  top: 0px;
+  left: 25%;
+  transform: translateX(-90px);
+  height: 200px;
+}
+@media (max-width: 920px) {
+  .section-about .about-wrap .left .tags {
+    left: 25%;
+    transform: translateX(-50%);
+  }
+}
+.section-about .about-wrap .left .tags .tag {
   position: absolute;
   display: flex;
   align-items: center;
@@ -193,30 +203,86 @@ body {
   border-radius: 100px;
   border: 1px solid #2d2d2d;
 }
-.section-about .about-wrap .right .tag.html {
+.section-about .about-wrap .left .tags .tag.html {
   bottom: 0px;
   left: 110px;
   transform: rotate(5deg);
 }
-.section-about .about-wrap .right .tag.css {
+.section-about .about-wrap .left .tags .tag.css {
   bottom: 20px;
   left: 0px;
   transform: rotate(-20deg);
 }
-.section-about .about-wrap .right .tag.scss {
+.section-about .about-wrap .left .tags .tag.scss {
   bottom: 100px;
   left: 25px;
   transform: rotate(-40deg);
 }
-.section-about .about-wrap .right .tag.javascript {
+.section-about .about-wrap .left .tags .tag.javascript {
   bottom: 20px;
   left: 200px;
   transform: rotate(35deg);
 }
-.section-about .about-wrap .right .tag.jquery {
+.section-about .about-wrap .left .tags .tag.jquery {
   bottom: 90px;
   left: 130px;
   transform: rotate(-6deg);
+}
+@media (max-width: 1100px) {
+  .section-about .about-wrap .left .tags .tag {
+    width: 14vw;
+    min-width: 145px;
+  }
+}
+.section-about .about-wrap .left .profile {
+  flex: 1 1 0;
+}
+.section-about .about-wrap .left .profile h3 {
+  font-size: 5.4rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.section-about .about-wrap .left .profile .table-wrap {
+  margin-top: 40px;
+}
+.section-about .about-wrap .left .profile .table-wrap table th,
+.section-about .about-wrap .left .profile .table-wrap table td {
+  vertical-align: middle;
+  padding: 4px;
+}
+.section-about .about-wrap .left .profile .table-wrap table th {
+  text-align: left;
+  font-weight: 800;
+}
+.section-about .about-wrap .left .profile .table-wrap table td.name {
+  font-weight: 800;
+}
+@media (max-width: 920px) {
+  .section-about .about-wrap .left .profile .table-wrap table {
+    margin: 0 auto;
+  }
+}
+.section-about .about-wrap .right {
+  flex-basis: 370px;
+  flex-grow: 0;
+  padding-top: 45px;
+}
+.section-about .about-wrap .right .img-container {
+  width: 100%;
+}
+.section-about .about-wrap .right .img-container img {
+  width: 100%;
+}
+@media (max-width: 1280px) {
+  .section-about .about-wrap .right {
+    flex-basis: 32vw;
+  }
+}
+@media (max-width: 920px) {
+  .section-about .about-wrap .right {
+    width: 350px;
+    margin: 60px auto 0;
+  }
 }
 
 .section-tip .grid > a {
